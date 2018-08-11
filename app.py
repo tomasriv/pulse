@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 from flask_sockets import Sockets
 import model
 import json
+import os
 
 app = Flask(__name__)
 sockets = Sockets(app)
@@ -24,4 +25,4 @@ def echo_socket(ws):
 		ws.send(signals)
 
 if __name__ == "__main__":
-	app.run(host="0.0.0.0", port=int("5000"), debug = True)
+	app.run(host="0.0.0.0", port=int(os.environ.get('PORT', 5000)), debug = True)
