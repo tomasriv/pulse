@@ -42,7 +42,7 @@ function minimizeVideo(){
   $("#graphs").animate({
     top: "-500px"
   }, delay);
-  $("#minToggle").html("Maximize Video");
+  $("#minToggle").html("Maximizar Video");
 
 }
 
@@ -89,6 +89,6 @@ function maximizeVideo(){
   $("#graphs").animate({
     top: "-200px"
   }, delay);
-  $("#minToggle").html("Minimize Video");
+  $("#minToggle").html("Minimizar Video");
 
 }
