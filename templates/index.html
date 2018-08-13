@@ -16,9 +16,9 @@
     </div>
 
     <div id="buttonBar" class="hide button">
-        <button id="end_camera" name="end_camera" class="button">Pause Camera</button>
-        <button id="blurToggle" name="blurToggle" class="button">Focus Video</button>
-        <button id="minToggle" name="minToggle" class="button">Minimize Video</button>
+        <button id="end_camera" name="end_camera" class="button">Pausar Camara</button>
+        <button id="blurToggle" name="blurToggle" class="button">Enfocar Video</button>
+        <button id="minToggle" name="minToggle" class="button">Minimizar Video</button>
     </div>
   </div>
 
@@ -27,7 +27,7 @@
   <div id="graphs">
     <div id="rawDataGraphContainer">
       <div id="rawDataGraph" class="graph"></div>
-      <p id="rawDataLabel">Change in brightness (raw video data)</p>
+      <p id="rawDataLabel">Cambios en tonalidad (video)</p>
     </div>
     <div id="confidenceGraph" class="graph"></div>
 
@@ -40,7 +40,7 @@
     // and basic UI
 
     $( "#minToggle" ).click(function() {
-      if ($("#minToggle").html() == "Minimize Video"){
+      if ($("#minToggle").html() == "Minimizar Video"){
         minimizeVideo();
       } else {
         maximizeVideo();
@@ -53,18 +53,18 @@
 
       var html = $("#blurToggle").html()
 
-      if ($("#blurToggle").html() == "Fade Video"){
-        $("#blurToggle").html("Focus Video");
+      if ($("#blurToggle").html() == "Desenfocar Video"){
+        $("#blurToggle").html("Enfocar Video");
       } else {
-        $("#blurToggle").html("Fade Video");
+        $("#blurToggle").html("Desenforcar Video");
       }
     });
 
     $("#end_camera").click(function(){
-      if ($("#end_camera").html() == "Pause Camera"){
-        $("#end_camera").html("Restart Camera");
+      if ($("#end_camera").html() == "Pausar Camera"){
+        $("#end_camera").html("Reiniciar Camera");
       } else {
-        $("#end_camera").html("Pause Camera");
+        $("#end_camera").html("Pausar Camera");
       }
     });
 
