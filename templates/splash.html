@@ -4,11 +4,11 @@
 			<img id="overlay" src="/static/images/transparentPulse.png">
 
 			<div id="graph"><svg></svg></div>
-			<h2 class="begin"><a href="#" class="begin" id="beginButton"> begin </a></h2>
+			<h2 class="begin"><a href="#" class="begin" id="beginButton"> Iniciar </a></h2>
 		
 		<div id="introduction">
-			<a href="#" id="next">NEXT</a>
-			<a href="{{url_for("get_heartrate")}}" id="skip">(SKIP)</a>
+			<a href="#" id="next">SIGUIENTE</a>
+			<a href="{{url_for("get_heartrate")}}" id="skip">(SALTAR)</a>
 
 		</div>
 		</div>
@@ -27,9 +27,9 @@
 		var instruct = document.createElement("h3");
 		instruct.className = "instruct";
 
-		var instructions = ["<span class='bold'>Welcome to <span class='blurFont'>pulse</span>!</span> <br><br><span class='blurFont'>pulse</span> derives your heartrate from your webcam. It is able to do this because there are subtle differences in the light reflected off of your skin when blood pumps beneath it.<br><br> Here are some tips for best results.", "<span class='num'>1</span> <br><br>Sit centered to the camera and avoid backlighting. <br><br><span class='blurFont'>pulse</span> uses a headtracking algorithm and will keep collecting data if you move around, but leaving the frame or showing <span class='blurFont'>pulse</span> too much of a profile will cause it some confusion.", "<span class='num'>2</span><br><br> <span class='blurFont'>pulse</span> collects data from the center of your forehead, so pull back any hair that could be covering that area.","<span class='num'>3</span><br><br> It takes <span class='blurFont'>pulse</span> about 10 seconds to gather enough data to start, so be patient. <br><br><span class='blurFont'>pulse</span> is most accurate after 30 seconds, so use this time to take a few deep breaths!", "<span class='num'>4</span><br><br> The video will be blurred so you don't get distracted, but you can refocus it if you feel like it (you vain thing, you).", "<span class='num'>5</span> <br><br>Want to learn more about the science behind <span class='blurFont'>pulse</span>? <br><br>Check it out on <a href='http://github.com/camilleanne/biofeedback' target='_blank' class='bold' id='github'>github</a>!", "Relax!"];
+		var instructions = ["<span class='bold'>Bienvenido a <span class='blurFont'>PulseCam</span>!</span> <br><br><span class='blurFont'>PulseCam</span> obtiene tu ritmo cardiaco utilizando tu camara web. Gracias a tecnicas de Fotopletismografia, PulseCam permite obtener las diminutas variaciones de tonalidad en la piel, debido a la irrigacion sanguinea.<br><br> Algunas recomendaciones para el correcto funcionamiento del algoritmo, son: ", "<span class='num'>1</span> <br><br>Sientese frente a la camara y procure evitar luz de fondo muy fuerte. <br><br><span class='blurFont'>PulseCam</span> utiliza un algoritmo capaz de rastrear su cabeza incluso si se esta moviendo repetidamente, pero se recomienda evitarlo para obtener el mejor resultado posible.", "<span class='num'>2</span><br><br> <span class='blurFont'>PulseCam</span> obtiene informacion del centro de la frente, se recomienda retirar cualquier obstruccion que pueda afectar el monitoreo, como el pelo.","<span class='num'>3</span><br><br> En aproximadamente 10 segundos, empezara a observar su ritmo cardiaco. <br><br><span class='blurFont'>PulseCam</span> es mucho mas preciso despues de 30 segundos.", "Relax!"];
 		
-		var otherBrowsers = ["<span class='bold'>Welcome to <span class='blurFont'>pulse</span>!</span> <br><br><span class='blurFont'>pulse</span> works best in <a href='https://www.google.com/intl/en/chrome/browser/'>Google's Chrome</a> browser. Since you're viewing <span class='blurFont'>pulse</span> in another browser, it may not work. Please reload in Chrome."]
+		var otherBrowsers = ["<span class='bold'>Bienvenido a <span class='blurFont'>PulseCam</span>!</span> <br><br><span class='blurFont'>PulseCam</span> trabaja solo con <a href='https://www.google.com/intl/en/chrome/browser/'>Google Chrome</a>."]
 
 		var next = document.getElementById("next");
 		var skip = document.getElementById("skip");
