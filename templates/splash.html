@@ -1,8 +1,6 @@
 {% extends "master.html" %}
 {% block body %}
 		<div id="container">
-			<img id="overlay" src="/static/images/transparentPulse.png">
-
 			<div id="graph"><svg></svg></div>
 			<h2 class="begin"><a href="#" class="begin" id="beginButton"> Iniciar </a></h2>
 		
@@ -27,9 +25,9 @@
 		var instruct = document.createElement("h3");
 		instruct.className = "instruct";
 
-		var instructions = ["<span class='bold'>Bienvenido a <span class='blurFont'>PulseCam</span>!</span> <br><br><span class='blurFont'>PulseCam</span> obtiene tu ritmo cardiaco utilizando tu camara web. Gracias a tecnicas de Fotopletismografia, PulseCam permite obtener las diminutas variaciones de tonalidad en la piel, debido a la irrigacion sanguinea.<br><br> Algunas recomendaciones para el correcto funcionamiento del algoritmo, son: ", "<span class='num'>1</span> <br><br>Sientese frente a la camara y procure evitar luz de fondo muy fuerte. <br><br><span class='blurFont'>PulseCam</span> utiliza un algoritmo capaz de rastrear su cabeza incluso si se esta moviendo repetidamente, pero se recomienda evitarlo para obtener el mejor resultado posible.", "<span class='num'>2</span><br><br> <span class='blurFont'>PulseCam</span> obtiene informacion del centro de la frente, se recomienda retirar cualquier obstruccion que pueda afectar el monitoreo, como el pelo.","<span class='num'>3</span><br><br> En aproximadamente 10 segundos, empezara a observar su ritmo cardiaco. <br><br><span class='blurFont'>PulseCam</span> es mucho mas preciso despues de 30 segundos.", "Relax!"];
+		var instructions = ["<span class='bold'>Bienvenido a <span class='blurFont'>BeatCam</span>!</span> <br><br><span class='blurFont'>BeatCam</span> obtiene tu ritmo cardiaco utilizando tu camara web. Gracias a tecnicas de Fotopletismografia, BeatCam permite obtener las diminutas variaciones de tonalidad en la piel, debido a la irrigacion sanguinea.<br><br> Algunas recomendaciones para el correcto funcionamiento del algoritmo, son: ", "<span class='num'>1</span> <br><br>Sientese frente a la camara y procure evitar luz de fondo muy fuerte. <br><br><span class='blurFont'>BeatCam</span> utiliza un algoritmo capaz de rastrear su cabeza incluso si se esta moviendo repetidamente, pero se recomienda evitarlo para obtener el mejor resultado posible.", "<span class='num'>2</span><br><br> <span class='blurFont'>BeatCam</span> obtiene informacion del centro de la frente, se recomienda retirar cualquier obstruccion que pueda afectar el monitoreo, como el pelo.","<span class='num'>3</span><br><br> En aproximadamente 10 segundos, empezara a observar su ritmo cardiaco. <br><br><span class='blurFont'>BeatCam</span> es mucho mas preciso despues de 30 segundos.", "Relax!"];
 		
-		var otherBrowsers = ["<span class='bold'>Bienvenido a <span class='blurFont'>PulseCam</span>!</span> <br><br><span class='blurFont'>PulseCam</span> trabaja solo con <a href='https://www.google.com/intl/en/chrome/browser/'>Google Chrome</a>."]
+		var otherBrowsers = ["<span class='bold'>Bienvenido a <span class='blurFont'>BeatCam</span>!</span> <br><br><span class='blurFont'>BeatCam</span> trabaja solo con <a href='https://www.google.com/intl/en/chrome/browser/'>Google Chrome</a>."]
 
 		var next = document.getElementById("next");
 		var skip = document.getElementById("skip");
